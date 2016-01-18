@@ -6,11 +6,9 @@
 NATS bagrund etc
 *****/
 
-body{
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: #fffaea;
-  color: #002e39;
+body {
+  background-color: #FEEE98;
+  color: #011D24;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-align: left;
@@ -153,12 +151,58 @@ nav li.active a {
 	top: 16px;
 }
 
+/* GRID */
+
+/* Mobile */
+[class*="col-"] {
+	width: 98%;
+	margin: 20px 1% 0 1%
+}
+
+body {
+	width: 100%;
+}
+
+/* Tablet */ 
+@media only screen and (min-width: 500px){
+	.col-m-1 {width: 6.33%;}
+	.col-m-2 {width: 14.66%;}
+	.col-m-3 {width: 23%;}
+	.col-m-4 {width: 31.33%;}
+	.col-m-5 {width: 39.66%;}
+	.col-m-6 {width: 48%;}
+	.col-m-7 {width: 56.33%;}
+	.col-m-8 {width: 64.66%;}
+	.col-m-9 {width: 73%;}
+	.col-m-10 {width: 81.33%;}
+	.col-m-11 {width: 89.66%;}
+	.col-m-12 {width: 98%;}
+}
+
+/* Desktop */ 
+
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px){
+	.col-1 {width: 6.33%;}
+	.col-2 {width: 14.66%;}
+	.col-3 {width: 23%;}
+	.col-4 {width: 31.33%;}
+	.col-5 {width: 39.66%;}
+	.col-6 {width: 48%;}
+	.col-7 {width: 56.33%;}
+	.col-8 {width: 64.66%;}
+	.col-9 {width: 73%;}
+	.col-10 {width: 81.33%;}
+	.col-11 {width: 89.66%;}
+	.col-12 {width: 98%;}
+}
+
+[class*="col-"]{
+	float: left;
+}
 
 
-
-
-
-
-
-
->>>>>>> upstream/master
