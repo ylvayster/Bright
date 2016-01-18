@@ -1,12 +1,64 @@
-body {
-	margin: 0;
-	padding: 0;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,900|Roboto+Condensed:400,700,300|Playfair+Display:400,400italic);
+
+
+/*==========
+NATS bagrund etc
+*****/
+
+body{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: #fffaea;
+  color: #002e39;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: left;
 }
+
+
+.ruta1{background-color: #AEE8E6;}
+
+/*==========
+FOOTER
+*****/
+
+
+
+.fotrub{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #011D24;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+#fotcopy{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #011D24;
+    font-size: 0.75em;
+}  
+  
+}
+
+
+/*
+#fotsocmed{}
+
+
+.fotcopy{}
+
+*/
+
 
 header {
 	height: 100px;
 	background-color: #FFEBDE;
 }
+
+
+
 
 /* MENU */
 nav {
@@ -109,3 +161,4 @@ nav li.active a {
 
 
 
+>>>>>>> upstream/master
