@@ -16,7 +16,6 @@ body {
     width: 100%;
 }
 
-
 .ruta1{background-color: #AEE8E6;}
 
 
@@ -47,8 +46,6 @@ header {
 FOOTER
 *****/
 
-
-
 .fotrub{
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
@@ -77,10 +74,12 @@ FOOTER
 
 
 
-
-
-
 /* MENU */
+#utanKnapp {
+	display: inline;
+}
+
+
 nav {
 	width: 0;
 	position: absolute;
@@ -110,7 +109,7 @@ nav li a {
 	font-family: 'Playfair Display', serif;
 }
 
-nav li:active {
+nav ul li:active {
 	background-color: #AEE8E6;
 	color: #011D24;
 }
@@ -197,9 +196,15 @@ nav li.active a {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
+
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
 }
 
 /* Desktop */ 
+
 
 @media only screen and (min-width: 768px){
     
