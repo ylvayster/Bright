@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,900|Roboto+Condensed:400,700,300|Playfair+Display:400,400italic);
 
 
@@ -49,3 +50,115 @@ FOOTER
 .fotcopy{}
 
 */
+
+
+header {
+	height: 100px;
+	background-color: #FFEBDE;
+}
+
+
+
+
+/* MENU */
+nav {
+	width: 0;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #011D24;
+	margin: 100px auto;
+	opacity: 0.8;
+	transition: 0.5s;
+}	
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	list-style: none;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #AEE8E6;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+}
+
+nav li:active {
+	background-color: #AEE8E6;
+	color: #011D24;
+}
+
+#navbar.clicked {
+	width: 100%;
+}
+
+/* För desktop:
+
+nav li.active {
+	background-color: #AEE8E6;
+}
+
+nav li.active a {
+	color: #011D24;
+}
+*/
+
+#knapp {
+	position: absolute;
+	top: 65px;
+	right: 0;
+	width: 40px;
+	height: 35px;
+}
+
+#knapp div {
+	position: relative;
+	right: -5px;
+	width: 30px;
+	height: 5px;
+	border-radius: 1px;
+	background-color: #AEE8E6;
+	transition: all 1s;
+}
+
+#knapp div:nth-child(1) {
+	top: 5px;
+}
+#knapp div:nth-child(2) {
+	top: 11px;
+}
+#knapp div:nth-child(3) {
+	top: 17px;
+}
+
+#knapp.clicked div:nth-child(1) {
+	transform: rotate(45deg);
+	transform-origin: left;
+	right: -10px;
+}
+#knapp.clicked div:nth-child(2) {
+	background-color: transparent;
+}
+#knapp.clicked div:nth-child(3) {
+	transform: rotate(-45deg);
+	transform-origin: left;
+	right: -10px;
+	top: 16px;
+}
+
+
+
+
+
+
+
+
+
+>>>>>>> upstream/master
