@@ -14,14 +14,11 @@ body {
   text-align: left;
 }
 
-
 .ruta1{background-color: #AEE8E6;}
 
 /*==========
 FOOTER
 *****/
-
-
 
 .fotrub{
     font-family: 'Roboto', sans-serif;
@@ -50,15 +47,11 @@ FOOTER
 */
 
 
-header {
-	height: 100px;
-	background-color: #FFEBDE;
+/* MENU */
+#utanKnapp {
+	display: inline;
 }
 
-
-
-
-/* MENU */
 nav {
 	width: 0;
 	position: absolute;
@@ -88,7 +81,7 @@ nav li a {
 	font-family: 'Playfair Display', serif;
 }
 
-nav li:active {
+nav ul li:active {
 	background-color: #AEE8E6;
 	color: #011D24;
 }
@@ -177,14 +170,16 @@ body {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
+
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
 }
 
 /* Desktop */ 
 
-body {
-	width: 960px;
-	margin: 0 auto;
-}
+
 
 @media only screen and (min-width: 768px){
 	.col-1 {width: 6.33%;}
