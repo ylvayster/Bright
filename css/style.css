@@ -11,6 +11,7 @@ body {
   color: #011D24;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+    margin: 0 auto;
   text-align: left;
     width: 100%;
 }
@@ -22,14 +23,25 @@ body {
 
 header {
     width: 100%;
-	height: 200px;
+	height: 100px;
     background-image: url("../img/logotype.png");
     background-color: #FFC369;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;    
 }
 
+
+/* MAP*/
+
+.kartaNoscript {
+    max-width: 100%;
+	height: 400px;
+    background-image: url("../img/karta.JPG");
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
 /*==========
 FOOTER
 *****/
@@ -165,7 +177,7 @@ nav li.active a {
 /* Mobile */
 [class*="col-"] {
 	width: 98%;
-	margin: 20px 1% 0 1%
+	margin: 20px 1% 0 1%;
     
 }
 
@@ -213,6 +225,10 @@ nav li.active a {
 	width: 960px;
 	margin: 0 auto;
 }
+    
+    header{
+    height: 200px;
+    }
 }
 
 [class*="col-"]{
