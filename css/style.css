@@ -71,7 +71,6 @@ FOOTER
     font-size: 0.75em;
 }  
   
-}
 
 
 /*
@@ -82,7 +81,30 @@ FOOTER
 
 */
 
+/*PORTFOLIO*/
 
+article.portfolio {
+    background-color: #AEE8E6;  
+    padding: 5%;
+    text-align: center;
+}
+
+article.portfolio:nth-child(2n+0){
+background-color: #FFEBDE;
+}
+
+article.portfolio:nth-child(3n+0){
+background-color: #FFF;
+}
+
+figure{
+margin: 0;
+}
+
+img.portfolio {
+    max-width: 100%;
+    height: auto;
+}
 
 /* MENU */
 #utanKnapp {}
