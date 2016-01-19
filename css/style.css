@@ -32,16 +32,18 @@ header {
 }
 
 
-/* MAP*/
+/*KARTA*/
 
+/*Utan Javascript*/
 .kartaNoscript {
     max-width: 100%;
-	height: 400px;
-    background-image: url("../img/karta.JPG");
+	height: 350px;
+    background-image: url("../img/kartamobil.jpg");
     background-repeat: no-repeat;
-    background-size: cover; 
-
+    background-position: center left;
+    background-size: contain; 
 }
+
 /*==========
 FOOTER
 *****/
@@ -208,6 +210,21 @@ nav li.active a {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
+
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+    
+    .kartaNoscript {
+    max-width: 100%;
+	height: 500px;
+    background-image: url("../img/karta.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; 
+}
+
 }
 
 /* Desktop */ 
