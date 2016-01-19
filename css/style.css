@@ -13,7 +13,7 @@ body {
   font-weight: 300;
     margin: 0 auto;
   text-align: left;
-    width: 100%;
+  width: 100%;
 }
 
 .ruta1{background-color: #AEE8E6;}
@@ -77,12 +77,25 @@ FOOTER
 
 
 /* MENU */
-#utanKnapp {
-	display: inline;
+#utanKnapp {}
+
+#utanKnapp li {
+	list-style: none;
+	background-color: #011D24;
+	margin: 2px 0;
+	padding: 3px 0;
+	text-align: center;
+	margin-left: -40px;
 }
 
+#utanKnapp li a {
+	text-decoration: none;
+	color: #AEE8E6;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+}
 
-nav {
+#navbar {
 	width: 0;
 	position: absolute;
 	top: 0px;
@@ -93,25 +106,26 @@ nav {
 	transition: 0.5s;
 }	
 
-nav ul {
+#navbar ul {
 	padding: 0;
 	margin: 0;
 }
 
-nav li {
+#navbar li {
+	overflow: hidden;
 	list-style: none;
 	text-align: center;
 	line-height: 2.5em;
 }
 
-nav li a {
+#navbar li a {
 	text-decoration: none;
 	color: #AEE8E6;
 	font-size: 1.5em;
 	font-family: 'Playfair Display', serif;
 }
 
-nav ul li:active {
+#navbar ul li:active {
 	background-color: #AEE8E6;
 	color: #011D24;
 }
@@ -180,9 +194,7 @@ nav li.active a {
 [class*="col-"] {
 	width: 98%;
 	margin: 20px 1% 0 1%;
-    
 }
-
 
 /* Tablet */ 
 @media only screen and (min-width: 500px){
@@ -212,10 +224,10 @@ nav li.active a {
     background-position: center left;
     background-size: cover; 
 }
+
 }
 
 /* Desktop */ 
-
 
 @media only screen and (min-width: 768px){
     
@@ -232,15 +244,10 @@ nav li.active a {
 	.col-11 {width: 89.66%;}
 	.col-12 {width: 98%;}
     
-      body {
-	width: 960px;
-	margin: 0 auto;
-}
-    
-    header{
-    height: 200px;
-    }
-}
+  body {
+		width: 960px;
+		margin: 0 auto;
+	}
 
 [class*="col-"]{
 	float: left;
