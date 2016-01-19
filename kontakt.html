@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<title>Kontakta oss</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+    <noscript>
+	    <style>
+        #karta {display: none;}
+         </style>
+     </noscript>
+    
 </head>
 <body>
     <main>
@@ -36,18 +43,21 @@
 
 <section>
     <h3>Hitta till oss!</h3>
-    <p>Vi finns på Tomtebodavägen 3A i Solna, Stockholm. Kartan nedan är från <a href="https://goo.gl/maps/jKwYbcMFYnk" title="Karta från Google över Tomtebodavägen 3A, Solna" alt="Karta från maps.google.com över Tomtebodavägen 3A, Solna" target="_blank">Google Maps</a>.</p>
+    <p>Vi finns på Tomtebodavägen 3A i Solna, Stockholm. Kartan nedan är från <a href="https://goo.gl/maps/jKwYbcMFYnk" title="Karta från Google över Tomtebodavägen 3A, Solna" target="_blank">Google Maps</a>.</p>
 </section> 
-<div id="karta"></div>                
+
+<div id="karta"></div>    
+            
 <noscript>               
 <div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna"></div>
-
-    <style>
-     /*display:none på kartan med script*/
-     </style>
 </noscript>
                             
         </article>
     </main>	
+
+<!-- Scripts för Google map-->
+<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="scripts/script.js"></script> 
+<!-- slut på scripts för Google map--> 
 </body>
 </html>
