@@ -10,7 +10,7 @@ body {
   color: #011D24;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-    margin: 0 auto;
+  margin: 0 auto;
   text-align: left;
   width: 100%;
 }
@@ -55,30 +55,26 @@ header {
 FOOTER
 *****/
 
-.fotrub{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: #011D24;
-    text-transform: uppercase;
-    font-size: 0.75em;
+
+footer{
+  background-color: #FFEBDE;
+  padding: 40px 40px 40px 40px;
+  text-align: center;
 }
 
+
+.fa{
+  margin: 8px;
+} 
+
+
 #fotcopy{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: #011D24;
-    font-size: 0.75em;
+       text-decoration: none;
+       font-style: normal;
+       font-size: 0.65em;
 }  
-  
 
 
-/*
-#fotsocmed{}
-
-
-.fotcopy{}
-
-*/
 
 /*PORTFOLIO*/
 
