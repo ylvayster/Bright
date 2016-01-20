@@ -271,10 +271,29 @@ img.portfolio {
 	.col-11 {width: 89.66%;}
 	.col-12 {width: 98%;}
 
+  
+  header {
+		height: 250px;
+	}  
+    
+  .portfolio img {
+     float: left;
+   }
+    
+    .portfolio section {
+        float: left;
+    }
+    
+    h3.portfolio {
+        padding-top: 4%;
+        float: right;
+        text-align: center;
+    }
 
-header {
-	height: 250px;
-}
+
+
+
+
 
 /* Navigering desktop */
 
@@ -314,5 +333,11 @@ header {
 }
 
 
+
+    .clear{
+        content: "";
+        clear: both;
+        display: table;
+    }
 
 
