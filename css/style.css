@@ -23,7 +23,7 @@ body {
 
 header {
     width: 100%;
-	height: 100px;
+    height: 100px;
     background-image: url("../img/logotype.png");
     background-color: #FFC369;
     background-position: bottom center;
@@ -84,7 +84,9 @@ FOOTER
 /*PORTFOLIO*/
 
 article.portfolio {
-    background-color: #AEE8E6;  
+    box-sizing: border-box;
+    background-color: #AEE8E6; 
+    width: 100%;
     padding: 5%;
     text-align: center;
 }
@@ -98,13 +100,18 @@ background-color: #FFF;
 }
 
 figure{
-margin: 0;
+    margin: 0 auto;
 }
 
-img.portfolio {
+img.portfolio { 
+    box-sizing: border-box;
+    border: 12px solid #bebebe;
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
 }
+
 
 /* MENU */
 
@@ -240,11 +247,6 @@ nav li.active a {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
-
-	body {
-		width: 960px;
-		margin: 0 auto;
-	}
     
     .kartaNoscript {
     max-width: 100%;
@@ -254,7 +256,10 @@ nav li.active a {
     background-position: center left;
     background-size: cover; 
 }
-
+ header {
+    height: 175px;
+    }
+    
 }
 
 /* Desktop */ 
@@ -274,10 +279,9 @@ nav li.active a {
 	.col-11 {width: 89.66%;}
 	.col-12 {width: 98%;}
     
-  body {
-		width: 960px;
-		margin: 0 auto;
-	}
+     header {
+    height: 250px;
+    }
 
 [class*="col-"]{
 	float: left;
