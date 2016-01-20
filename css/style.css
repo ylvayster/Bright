@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,900|Roboto+Condensed:400,700,300|Playfair+Display:400,400italic);
 
 
-/*==========
-NATS bagrund etc
-*****/
+/*Bakgrunder*/
 
 body {
   background-color: #FEEE98;
@@ -15,6 +13,26 @@ body {
   width: 100%;
 }
 
+body.index {
+    background-image: url(../../../abstractcrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+.colorblock {
+    background-color: #AEE8E6; 
+}
+
+.colorblock:nth-child(2n+0){
+background-color: #FFEBDE;
+}
+
+.colorblock:nth-child(3n+0){
+background-color: #FFF;
+}
+
 .ruta1{background-color: #AEE8E6;}
 
 
@@ -24,7 +42,7 @@ header {
     width: 100%;
     height: 100px;
     background-image: url("../img/logotype.png");
-    background-color: #FFC369;
+    background-color: #FEEE98;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;    
@@ -80,18 +98,10 @@ footer{
 
 article.portfolio {
     box-sizing: border-box;
-    background-color: #AEE8E6; 
     width: 100%;
     padding: 5%;
     text-align: center;
-}
-
-article.portfolio:nth-child(2n+0){
-background-color: #FFEBDE;
-}
-
-article.portfolio:nth-child(3n+0){
-background-color: #FFF;
+    overflow: hidden;
 }
 
 figure{
@@ -109,23 +119,6 @@ img.portfolio {
 
 
 /* MENU */
-
-
-#utanKnapp li {
-	list-style: none;
-	background-color: #011D24;
-	margin: 2px 0;
-	padding: 3px 0;
-	text-align: center;
-	margin-left: -40px;
-}
-
-#utanKnapp li a {
-	text-decoration: none;
-	color: #AEE8E6;
-	font-size: 1.5em;
-	font-family: 'Playfair Display', serif;
-}
 
 #navbar {
 	width: 0;
@@ -165,17 +158,6 @@ img.portfolio {
 #navbar.clicked {
 	width: 100%;
 }
-
-/* För desktop:
-
-nav li.active {
-	background-color: #AEE8E6;
-}
-
-nav li.active a {
-	color: #011D24;
-}
-*/
 
 #knapp {
 	position: absolute;
@@ -220,10 +202,28 @@ nav li.active a {
 	top: 16px;
 }
 
+/* Navbar utan JavaScript */
+#utanKnapp li {
+	list-style: none;
+	background-color: #011D24;
+	margin: 2px 0;
+	padding: 3px 0;
+	text-align: center;
+	margin-left: -40px;
+}
+
+#utanKnapp li a {
+	text-decoration: none;
+	color: #AEE8E6;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+}
+
 /* GRID */
 
 /* Mobile */
 [class*="col-"] {
+	float: left;
 	width: 98%;
     margin: 20px 1% 0 1%
 }
@@ -243,6 +243,7 @@ nav li.active a {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
+
     
     .kartaNoscript {
     max-width: 100%;
@@ -275,13 +276,80 @@ nav li.active a {
 	.col-10 {width: 81.33%;}
 	.col-11 {width: 89.66%;}
 	.col-12 {width: 98%;}
+
+  
+  header {
+		height: 250px;
+	}  
     
-     header {
-    height: 250px;
+  .portfolio img {
+     float: left;
+   }
+    
+    .portfolio section {
+        float: left;
+    }
+    
+    h3.portfolio {
+        apadding-top: 4%;
+        float: right;
+        text-align: center;
     }
 
-[class*="col-"]{
-	float: left;
+
+
+
+
+
+/* Navigering desktop */
+
+#navbar {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;	
+}
+
+#knapp {
+	display: none;
+}
+
+#navbar ul {
+	font-size: 0;
+	display: block;
+	text-align: center;
+}
+
+#navbar li {
+	display: inline;
+	font-size: 16px;
+	margin: 0;	
+}
+
+#navbar li a {
+	padding: 4px 20px 9px 20px;
+}
+
+#navbar a:hover {
+	background-color: grey;
+}
+
+#navbar li.active a {
+	background-color: white;
+	color: black;	
 }
 
 
+
+    .clear{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    
+.row:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
