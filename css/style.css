@@ -10,17 +10,50 @@ body {
   color: #011D24;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+    margin: 0 auto;
   text-align: left;
+  width: 100%;
+}
+
+.ruta1{background-color: #AEE8E6;}
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+	height: 100px;
+    background-image: url("../img/logotype.png");
+    background-color: #FFC369;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;    
 }
 
 
-.ruta1{background-color: #AEE8E6;}
+/*KARTA*/
+
+/*Utan Javascript*/
+.kartaNoscript {
+    max-width: 100%;
+	height: 350px;
+    background-image: url("../img/kartamobil.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain; 
+}
+
+/*Med Javascript*/
+#karta {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 350px;
+}
+
 
 /*==========
 FOOTER
 *****/
-
-
 
 .fotrub{
     font-family: 'Roboto', sans-serif;
@@ -37,7 +70,6 @@ FOOTER
     font-size: 0.75em;
 }  
   
-}
 
 
 /*
@@ -48,17 +80,51 @@ FOOTER
 
 */
 
+/*PORTFOLIO*/
 
-header {
-	height: 100px;
-	background-color: #FFEBDE;
+article.portfolio {
+    background-color: #AEE8E6;  
+    padding: 5%;
+    text-align: center;
 }
 
+article.portfolio:nth-child(2n+0){
+background-color: #FFEBDE;
+}
 
+article.portfolio:nth-child(3n+0){
+background-color: #FFF;
+}
 
+figure{
+margin: 0;
+}
+
+img.portfolio {
+    max-width: 100%;
+    height: auto;
+}
 
 /* MENU */
-nav {
+
+
+#utanKnapp li {
+	list-style: none;
+	background-color: #011D24;
+	margin: 2px 0;
+	padding: 3px 0;
+	text-align: center;
+	margin-left: -40px;
+}
+
+#utanKnapp li a {
+	text-decoration: none;
+	color: #AEE8E6;
+	font-size: 1.5em;
+	font-family: 'Playfair Display', serif;
+}
+
+#navbar {
 	width: 0;
 	position: absolute;
 	top: 0px;
@@ -69,25 +135,26 @@ nav {
 	transition: 0.5s;
 }	
 
-nav ul {
+#navbar ul {
 	padding: 0;
 	margin: 0;
 }
 
-nav li {
+#navbar li {
+	overflow: hidden;
 	list-style: none;
 	text-align: center;
 	line-height: 2.5em;
 }
 
-nav li a {
+#navbar li a {
 	text-decoration: none;
 	color: #AEE8E6;
 	font-size: 1.5em;
 	font-family: 'Playfair Display', serif;
 }
 
-nav li:active {
+#navbar ul li:active {
 	background-color: #AEE8E6;
 	color: #011D24;
 }
@@ -155,13 +222,9 @@ nav li.active a {
 /* Mobile */
 [class*="col-"] {
 	width: 98%;
-	margin: 20px 1% 0 1%
+    margin: 20px 1% 0 1%
 }
 
-
-body {
-	width: 100%;
-}
 
 /* Tablet */ 
 @media only screen and (min-width: 500px){
@@ -177,46 +240,28 @@ body {
 	.col-m-10 {width: 81.33%;}
 	.col-m-11 {width: 89.66%;}
 	.col-m-12 {width: 98%;}
+
+	body {
+		width: 960px;
+		margin: 0 auto;
+	}
+    
+    .kartaNoscript {
+    max-width: 100%;
+	height: 500px;
+    background-image: url("../img/karta.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover; 
+}
+
 }
 
 /* Desktop */ 
-
-body {
-	width: 960px;
-	margin: 0 auto;
-}
-
-
-
-body {
-	width: 100%;
-}
-
-/* Tablet */ 
-@media only screen and (min-width: 500px){
-	.col-m-1 {width: 6.33%;}
-	.col-m-2 {width: 14.66%;}
-	.col-m-3 {width: 23%;}
-	.col-m-4 {width: 31.33%;}
-	.col-m-5 {width: 39.66%;}
-	.col-m-6 {width: 48%;}
-	.col-m-7 {width: 56.33%;}
-	.col-m-8 {width: 64.66%;}
-	.col-m-9 {width: 73%;}
-	.col-m-10 {width: 81.33%;}
-	.col-m-11 {width: 89.66%;}
-	.col-m-12 {width: 98%;}
-}
-
-/* Desktop */ 
-
-body {
-	width: 960px;
-	margin: 0 auto;
-}
 
 
 @media only screen and (min-width: 768px){
+    
 	.col-1 {width: 6.33%;}
 	.col-2 {width: 14.66%;}
 	.col-3 {width: 23%;}
@@ -229,7 +274,11 @@ body {
 	.col-10 {width: 81.33%;}
 	.col-11 {width: 89.66%;}
 	.col-12 {width: 98%;}
-}
+    
+  body {
+		width: 960px;
+		margin: 0 auto;
+	}
 
 [class*="col-"]{
 	float: left;
