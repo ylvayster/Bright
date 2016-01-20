@@ -283,9 +283,29 @@ nav li.active a {
      header {
     height: 250px;
     }
+    
+    .portfolio img {
+        float: left;
+    }
+    
+    .portfolio section {
+        float: left;
+    }
+    
+    h3.portfolio {
+        padding-top: 4%;
+        float: right;
+        text-align: center;
+    }
 
 [class*="col-"]{
 	float: left;
 }
 
+    .clear{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
 
