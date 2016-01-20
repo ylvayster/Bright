@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,900|Roboto+Condensed:400,700,300|Playfair+Display:400,400italic);
 
 
-/*==========
-NATS bagrund etc
-*****/
+/*Bakgrunder*/
 
 body {
   background-color: #FEEE98;
@@ -15,6 +13,26 @@ body {
   width: 100%;
 }
 
+body.index {
+    background-image: url(../../../abstractcrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+.colorblock {
+    background-color: #AEE8E6; 
+}
+
+.colorblock:nth-child(2n+0){
+background-color: #FFEBDE;
+}
+
+.colorblock:nth-child(3n+0){
+background-color: #FFF;
+}
+
 .ruta1{background-color: #AEE8E6;}
 
 
@@ -24,7 +42,7 @@ header {
     width: 100%;
     height: 100px;
     background-image: url("../img/logotype.png");
-    background-color: #FFC369;
+    background-color: #FEEE98;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;    
@@ -84,18 +102,10 @@ FOOTER
 
 article.portfolio {
     box-sizing: border-box;
-    background-color: #AEE8E6; 
     width: 100%;
     padding: 5%;
     text-align: center;
-}
-
-article.portfolio:nth-child(2n+0){
-background-color: #FFEBDE;
-}
-
-article.portfolio:nth-child(3n+0){
-background-color: #FFF;
+    overflow: hidden;
 }
 
 figure{
@@ -285,7 +295,7 @@ img.portfolio {
     }
     
     h3.portfolio {
-        padding-top: 4%;
+        apadding-top: 4%;
         float: right;
         text-align: center;
     }
@@ -340,4 +350,10 @@ img.portfolio {
         display: table;
     }
 
-
+    
+.row:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
