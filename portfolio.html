@@ -7,24 +7,51 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <noscript>
+    <style>
+       #knapp {display: none;}
+    </style>
+  </noscript>
 </head>
 <body>
-	<main>
-	   <header>
-       <!--OBS nedanstående knapp placeras i headern -->
-            <div id="knapp">	
+  <header>
+            <div id="knapp">  
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
-	    <!-- Slut på knapp -->	
+            </div>  
        </header>
-	<h2>Portfolio</h2>
-        <div class="row">
-           
+
+  <noscript>
+  <ul id="utanKnapp">
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="in_english.html">In English</a></li>
+  </ul>
+</noscript>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="in_english.html">In English</a></li>
+  </ul>
+</nav>
+	<main>
+	   
+	<h2 class="pf">Portfolio</h2>
+	
         <div class="row">
             <article class="portfolio white">
                 <h3 class="portfolio col-m-12 col-5">CSS Zen Garden - Tree</h3>
+
                     <figure class="col-m-12 col-7">
                      <img class="portfolio" src="img/zengardenkarolin.jpg" alt="Designen Tree">
                     </figure>
@@ -35,6 +62,7 @@
              </article>
         </div>
            
+           <div class="row">
             <article class="portfolio blue">
                 <h3 class="portfolio col-m-12 col-5">CSS Zen Garden - Birds</h3>
                     <figure class="col-m-12 col-7">
@@ -62,7 +90,6 @@
              </article>
         </div>
       
-    </main>
 
 <footer>
     <div class="ikoner">
@@ -93,5 +120,10 @@
   </div>
 </address>  
   </footer>
+
+      
+    </main>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

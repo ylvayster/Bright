@@ -6,21 +6,53 @@
 	<title>About Bright</title>
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <noscript>
+    <style>
+       #knapp {display: none;}
+    </style>
+  </noscript>
 </head>
 <body>
+<header>
+  <div id="knapp">  
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<noscript>
+  <ul id="utanKnapp">
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="in_english.html">In English</a></li>
+  </ul>
+</noscript>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li class="active"><a href="in_english.html">In English</a></li>
+  </ul>
+</nav>
+
      <main>
-              <header>
-       <!--OBS nedanstående knapp placeras i headern -->
-            <div id="knapp">	
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-	    <!-- Slut på knapp -->	
-       </header>
+
+       <div class="row white">
+            <article class="col-m-12 col-12">
+
        
        <div class="row">
             <article class="col-m-12 col-12 white">
+
                  <h2>About Bright</h2>
                     <p>
                 Bright is a web agency founded in 2015 with a mission to create better web. We’re front end experts with a passion for sustainability and the environment, and we aim to develop web sites and applications that last. We’re fully convinced that even your digital presence can be sustainable!
@@ -63,5 +95,10 @@
   </div>
 </address>  
   </footer>
+
+       
+    </main>
+  <script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

@@ -177,14 +177,6 @@ figure {
 	text-align: center;
 }
 
-#medarbetare figcaption {
-	line-height: 2;
-}
-
-
-
-
-
 img.portfolio { 
     box-sizing: border-box;
     border: 12px solid #bebebe;
@@ -342,6 +334,7 @@ img.portfolio {
  header {
     height: 175px;
     }
+
     
     h3.portfolio{
      float: right;
@@ -350,10 +343,22 @@ img.portfolio {
     p.portfolio {
     float: right;
     }
+
+
+	#knapp {
+	top: 140px;
+}
+
+	#navbar.clicked {
+		top: 75px;
+	}	
+
+
 }
 
 /* Desktop */ 
 
+	
 
 @media only screen and (min-width: 768px){
     
@@ -418,7 +423,7 @@ img.portfolio {
 }
 
 #navbar li a {
-	padding: 4px 20px 9px 20px;
+	padding: 4px 17px 9px 17px;
 }
 
 #navbar a:hover {
@@ -430,7 +435,9 @@ img.portfolio {
 	color: black;	
 }
 
-
+#utanKnapp {
+		display: none;
+	}
 }
 
 

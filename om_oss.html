@@ -7,18 +7,42 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <noscript>
+		<style>
+	     #knapp {display: none;}
+	  </style>
+ 	</noscript>
 </head>
 <body>
 	      <header>
-       <!--OBS nedanstående knapp placeras i headern -->
             <div id="knapp">	
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-	    <!-- Slut på knapp -->	
        </header>
-	<nav></nav>
+	<noscript>
+	<ul id="utanKnapp">
+		<li><a href="index.html">Hem</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+		<li class="active"><a href="om_oss.html">Om Bright</a></li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+		<li><a href="in_english.html">In English</a></li>
+	</ul>
+</noscript>
+
+<nav id="navbar">
+	<ul>
+		<li><a href="index.html">Hem</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+		<li class="active"><a href="om_oss.html">Om Bright</a></li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+		<li><a href="in_english.html">In English</a></li>
+	</ul>
+</nav>
 	<main>
 		
 			<div class="row">
@@ -52,21 +76,21 @@
 				<h3>Medarbetare</h3>
 				<figure class="col-4">
 					<img src="img/Natasza.jpg" alt="Bild på Ylva Häggblad">
-					<figcaption>Natasza Nowakowska</figcaption>
+					<figcaption>Natasza Nowakowska<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</figcaption>
 					</figure>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</p>
+				
 
 				<figure class="col-4">
 					<img src="img/Ylva.jpg" alt="Bild på Natasza Nowakowska">
-					<figcaption>Ylva Häggblad</figcaption>
+					<figcaption>Ylva Häggblad<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</figcaption>
 					</figure>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</p>
+					
 				
 				<figure class="col-4">
 					<img src="img/Karolin.jpg" alt="Bild på Karolin Thunman">
-					<figcaption>Karolin Thunman</figcaption>
+					<figcaption>Karolin Thunman<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</figcaption>
 					</figure>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue quis ipsum ornare venenatis. Donec euismod tempor mi quis.</p>
+					
 				
 			</section>
 			</div>
@@ -82,26 +106,32 @@
       <i class="fa fa-instagram fa-3x"></i>
    </div> 
     
-   <div class="kontakttxt">
-     <p> 
-    <i class="fa fa-envelope-o"></i>
-       <a href="mailto:fakeadress@bright.se">hello@bright.se</a>
+  <div class="kontakttxt">
+    <p> 
+	    <i class="fa fa-envelope-o"></i>
+	    <a href="mailto:fakeadress@bright.se">hello@bright.se</a>
     </p>
-     <p>
+    <p>
        <i class="fa fa-phone"></i>+ 46 (0)72–3097474
-     </p>
-     <p>
-    <i class="fa fa-map-pin"></i>Tomtebodavägen 3A, 171 65 Solna</p>
-   </div>
-
-<address>
-  <div id="fotcopy">
-&copy;2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
-      <a href="mailto:karolin.thunman@gmail.com"> Karolin Thunman</a>,
-      <a href="mailto:natasza@fingerspit.se"> Natasza Nowakowska</a>.<br>
-(Projekt gjort under utbildningen till Frontendutvecklare, Nackademin.)
+    </p>
+    <p>
+	    <i class="fa fa-map-pin"></i>Tomtebodavägen 3A, 171 65 Solna
+  	</p>
   </div>
-</address>  
-  </footer>
+
+	<address>
+	  <div id="fotcopy">
+			&copy;2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
+			      <a href="mailto:karolin.thunman@gmail.com"> Karolin Thunman</a>,
+			      <a href="mailto:natasza@fingerspit.se"> Natasza Nowakowska</a>.<br>
+						(Projekt gjort under utbildningen till Frontendutvecklare, Nackademin.)
+	  </div>
+	</address>  
+</footer>
+
+</main>
+<script type="text/javascript" src="scripts/script.js"></script>
+
+
 </body>
 </html>
