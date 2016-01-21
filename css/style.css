@@ -38,15 +38,6 @@ background-color: #FFEBDE;
 }
 
 
-.white{
-background-color: #FFF;
-}
-.blue {
-    background-color: #AEE8E6; 
-}
-.pink{
-background-color: #FFEBDE;
-}
 
 
 .ruta1{background-color: #AEE8E6;}
@@ -306,11 +297,20 @@ img.portfolio {
  header {
     height: 175px;
     }
-    
+
+	#knapp {
+	top: 140px;
+}
+
+	#navbar.clicked {
+		top: 75px;
+	}	
+
 }
 
 /* Desktop */ 
 
+	
 
 @media only screen and (min-width: 768px){
     
@@ -375,7 +375,7 @@ img.portfolio {
 }
 
 #navbar li a {
-	padding: 4px 20px 9px 20px;
+	padding: 4px 17px 9px 17px;
 }
 
 #navbar a:hover {
@@ -387,7 +387,9 @@ img.portfolio {
 	color: black;	
 }
 
-
+#utanKnapp {
+		display: none;
+	}
 }
 
 
