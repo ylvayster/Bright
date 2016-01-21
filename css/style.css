@@ -127,7 +127,24 @@ figure {
 
 /* OM BRIGHT */
 
+#medarbetare figure img {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	border: 12px solid #42c9c6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
+#medarbetare figure {
+	text-align: center;
+}
+
+#medarbetare figcaption {
+	line-height: 2;
+}
 
 
 
@@ -222,7 +239,7 @@ img.portfolio {
 	background-color: transparent;
 }
 #knapp.clicked div:nth-child(3) {
-	transform: rotate(-45de	g);
+	transform: rotate(-45deg);
 	transform-origin: left;
 	right: -10px;
 	top: 16px;
