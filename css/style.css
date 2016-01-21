@@ -33,26 +33,9 @@ background-color: #FFF;
     background-color: #AEE8E6; 
 }
 
-.pink{
-background-color: #FFEBDE;
+.pink {
+    background-color: #FFEBDE;
 }
-
-
-.white{
-background-color: #FFF;
-}
-.blue {
-    background-color: #AEE8E6; 
-}
-.pink{
-background-color: #FFEBDE;
-}
-
-
-.ruta1{background-color: #AEE8E6;}
-
-
-/*Basic styles*/
 
 /*HEADER*/
 
@@ -85,7 +68,60 @@ header {
     height: 350px;
 }
 
+/*KONTAKTFORMULÄR*/
 
+
+fieldset {
+border: none;
+    padding: 0;
+}
+form{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 5%;
+      border-radius: 8px;
+    -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+}
+
+
+input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background-color: #ddf2f1;
+    border: none;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    color: #011D24;
+    margin-bottom: 30px;
+}
+
+button{
+    margin-bottom: 0px;
+    background-color: #70b5b3; 
+    color: #ecf7f6;
+    font-weight: 400;
+}
+
+
+textarea{
+    display: block;
+    resize: none;
+    overflow: auto;
+    border-radius: 5px;
+}
 /*==========
 FOOTER
 *****/
@@ -117,6 +153,7 @@ article.portfolio {
     box-sizing: border-box;
     width: 100%;
     /*padding: 5%;  - ev. ta tillbaka*/
+    overflow: hidden;
 }
 
 figure {
@@ -151,10 +188,11 @@ figure {
 img.portfolio { 
     box-sizing: border-box;
     border: 12px solid #bebebe;
-    max-width: 100%;
+    max-width: 82%;
     height: auto;
     border-radius: 5px;
     box-shadow: 5px 5px 10px grey;
+    margin: 4.5% 9% 4.5% 9%;
 }
 
 
@@ -305,6 +343,13 @@ img.portfolio {
     height: 175px;
     }
     
+    h3.portfolio{
+     float: right;
+    }
+    
+    p.portfolio {
+    float: right;
+    }
 }
 
 /* Desktop */ 
@@ -330,17 +375,17 @@ img.portfolio {
 		height: 250px;
 	}  
     
-  .portfolio img {
+  img.portfolio {
      float: left;
+      margin: 9%;
    }
     
-    .portfolio section {
-        float: left;
+    h3.portfolio  {
+        float: right;
     }
     
-    h3.portfolio {
+    p.portfolio {
         float: right;
-        text-align: center;
     }
 
 
