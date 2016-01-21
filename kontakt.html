@@ -24,53 +24,72 @@
             </div>
 	    <!-- Slut på knapp -->	
        </header>
-
-        <article>
-            <h2>Kontakta oss</h2>
-<section>
-<p>Har du en generell förfrågan eller undrar över något annat? Kontakta oss då via kontaktformuläret nedan eller på <a href="mailto:skaffa@mailadress.se">skaffa@mailadress.se</a></p>
-                    
-<div class="fomul.ruta">
-  
-<form>
-  <fieldset>
-  <h3>Ditt namn:</h3><br>
-    <input type="text" name="namn">
-  <h3>Företag:</h3><br>
-    <input type="text" name="foretag">
-  <h3>Emailadress:</h3>
-    <input type="text" name="email">
-  <h3>Telefonnummer:</h3>
-    <input type="text" name="telnr"><br>
-  <h3>Meddelande:</h3>
-    <textarea id="meddelande" name="form_meddelande"></textarea><br>
-<button type="submit">Skicka</button>
-  
-</fieldset>   
-</form></div>
-</section>
-                    
-                    <p>Karolin Thunman <a href="mailto:karolin.thunman@gmail.com">karolin.thunman@gmail.com</a></p>
-                    <p>Natasza Nowakowska <a href="mailto:natasza@fingerspitz.se">natasza@fingerspitz.se</a></p>
-                    <p>Ylva Häggblad <a href="mailto:ylva.haggblad@gmail.com">ylva.haggblad@gmail.com</a></p>
-
-<section>
-    <h3>Hitta till oss!</h3>
-    <p>Vi finns på Tomtebodavägen 3A i Solna, Stockholm. Kartan nedan är från <a href="https://goo.gl/maps/jKwYbcMFYnk" title="Karta från Google över Tomtebodavägen 3A, Solna" target="_blank">Google Maps</a>.</p>
-</section> 
-
-<div id="karta"></div>    
+           <div class="row white">
+               <div class="col-m-12 col-12">
+                   <article>
+                        <section><h2>Kontakta oss</h2>
+                        <p>Har du en generell förfrågan eller undrar över något annat? Kontakta oss då via kontaktformuläret nedan eller på <a href="mailto:skaffa@mailadress.se">skaffa@mailadress.se</a></p>
+                        </section>
+                </div>
+            </div>    
             
-<noscript>               
-<div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna"></div>
-</noscript>
-                            
-        </article>
-    </main>	
+            <div class="row white">
+               <div class="col-m-12 col-12 fomul.ruta">    
+                    <form>
+                      <fieldset>
+                          <h3>Ditt namn:</h3><br>
+                            <input type="text" name="namn">
+                          <h3>Företag:</h3><br>
+                            <input type="text" name="foretag">
+                          <h3>Emailadress:</h3>
+                            <input type="text" name="email">
+                          <h3>Telefonnummer:</h3>
+                            <input type="text" name="telnr"><br>
+                          <h3>Meddelande:</h3>
+                          <textarea id="meddelande" name="form_meddelande">                             </textarea><br>
+                        <button type="submit">Skicka</button> 
+                        </fieldset>   
+                    </form> 
+                </div>
+            </div>
+
+           <div class="row blue">
+              <div class="col-m-12 col-12">
+                    <h3>Medarbetare</h3>
+                       <section>
+                        <p><a href="mailto:karolin.thunman@gmail.com" title="karolin.thunman@gmail.com">Karolin Thunman</a> </p>
+                        <p><a href="mailto:natasza@fingerspitz.se" title="natasza@fingerspitz.se">Natasza Nowakowska</a></p>
+                        <p><a href="mailto:ylva.haggblad@gmail.com" title="ylva.haggblad@gmail.com">Ylva Häggblad</a></p>
+                        </section>
+                </div>
+            </div>
+
+            <div class="row pink">
+               <section class="col-m-12 col-12">
+                    <h3>Hitta till oss!</h3>
+                         <p>Vi finns på Tomtebodavägen 3A i Solna, Stockholm. Kartan nedan är från <a href="https://goo.gl/maps/jKwYbcMFYnk" title="Karta från Google över Tomtebodavägen 3A, Solna" target="_blank">Google Maps</a>.</p>
+                </section>
+            </div>
+            
+            <div class="row pink">
+               <div class="col-m-12 col-12 colorblock">
+                <div id="karta"></div>    
+               </div>
+               
+               <div class="col-m-12 col-12">
+                    <noscript>                                   
+                        <div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna">
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+    </article>                        
+</main>	
 
 <!-- Scripts för Google map-->
 <script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="scripts/script.js"></script> 
 <!-- slut på scripts för Google map--> 
+
 </body>
 </html>

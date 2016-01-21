@@ -21,20 +21,25 @@ body.index {
     height: auto;
 }
 
-.colorblock {
+
+/*Färgerna ska alternera i ordning vitt, blått, rosa*/
+
+.white{
+background-color: #FFF;
+}
+
+.blue {
     background-color: #AEE8E6; 
 }
 
-.colorblock:nth-child(2n+0){
+.pink{
 background-color: #FFEBDE;
-}
-
-.colorblock:nth-child(3n+0){
-background-color: #FFF;
 }
 
 .ruta1{background-color: #AEE8E6;}
 
+
+/*Basic styles*/
 
 /*HEADER*/
 
@@ -225,11 +230,18 @@ img.portfolio {
 
 /* GRID */
 
-/* Mobile */
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
 [class*="col-"] {
 	float: left;
 	width: 98%;
-    margin: 20px 1% 0 1%
+    margin: 0 1% 0 1%;
 }
 
 
@@ -295,7 +307,6 @@ img.portfolio {
     }
     
     h3.portfolio {
-        apadding-top: 4%;
         float: right;
         text-align: center;
     }
@@ -342,9 +353,9 @@ img.portfolio {
 	color: black;	
 }
 
+}
 
-
-    .clear{
+.clear{
         content: "";
         clear: both;
         display: table;
