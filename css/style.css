@@ -14,7 +14,7 @@ body {
 }
 
 body.index {
-    background-image: url(../../../abstractcrop.jpg);
+    background-image: url(../img/abstractcrop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -92,7 +92,7 @@ FOOTER
 
 
 footer{
-  background-color: #FFEBDE;
+  background-color: #FEEE98;
   padding: 40px 40px 40px 40px;
   text-align: center;
 }
@@ -116,9 +116,7 @@ footer{
 article.portfolio {
     box-sizing: border-box;
     width: 100%;
-    padding: 5%;
-    text-align: center;
-    overflow: hidden;
+    /*padding: 5%;  - ev. ta tillbaka*/
 }
 
 figure {
