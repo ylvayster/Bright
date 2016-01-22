@@ -60,14 +60,6 @@ a:visited{
   
 }
 
-.intro{
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  
-  
-}
-
-
 p, ol
   {margin: 0 9% 0 9%;
   text-align: left;
@@ -108,6 +100,29 @@ figcaption {
   margin-top: 0.2em;
 }
 
+
+.intro{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  /* font-style: italic; */
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.intro2{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  /* font-style: italic; */
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+  
 /*HEADER*/
 
 header {
@@ -509,6 +524,7 @@ h3, h4{
   margin-top: 100px; */
   }
 }
+}
 
 /* Desktop */ 
 
@@ -560,7 +576,6 @@ h2{
   font-size: 3.65em;
   text-align: center;
   margin-bottom: 2.2em;
-
 }
 
 
@@ -573,13 +588,25 @@ h3, h4{
   margin:auto;
   padding-top: 60px;
   padding-bottom: 5px;
+  }
   /*
   margin-bottom: 2em;
   margin-left: 9%;
   margin-left: 9%;
   margin-top: 100px; */
   
+
+  
+  .intro{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  /* font-style: italic; */
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  padding-top: 50px;
 }
+
 
 #fotcopy{
        text-decoration: none;
