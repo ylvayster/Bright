@@ -57,8 +57,16 @@ a:visited{
   
 }
 
+.intro{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  
+  
+}
 
-p{margin: 0 9% 0 9%;
+
+p, ol
+  {margin: 0 9% 0 9%;
   text-align: left;
   margin-bottom: 1.2em;
   }
@@ -187,10 +195,12 @@ FOOTER
 *****/
 
 footer {
+  clear: both;
   background-color: #FEEE98;
   padding: 40px 0px 40px 0px;
   /* margin-top: 0px; */
   margin-bottom: 0px;
+  border-top: 5px solid black;
 }
 
 footer p{
@@ -419,11 +429,45 @@ img.portfolio {
 	}	
 
 
+body {align-content: center;}
+  
+p, ol {
+  width: 75%;
+  margin:auto;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 1.2em;
+  padding-bottom: 25px;
+  }
+
+h2{
+  font-size: 3.65em;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+
+
+h3, h4{
+  width: 75%;
+  line-height: 1.8em;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: left;
+  margin:auto;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  /*
+  margin-bottom: 2em;
+  margin-left: 9%;
+  margin-left: 9%;
+  margin-top: 100px; */
+  
 }
 
 /* Desktop */ 
 
-	
 
 @media only screen and (min-width: 768px){
     
@@ -458,9 +502,47 @@ img.portfolio {
         float: right;
     }
 
+  body {align-content: center;}
+  
+p, ol {
+  width: 55%;
+  margin:auto;
+  font-size: 1.25em;
+  margin-bottom: 2em;
+  line-height: 1.65em;
+  }
+
+h2{
+  font-size: 3.65em;
+  text-align: center;
+  margin-bottom: 2.2em;
+
+}
 
 
+h3, h4{
+  line-height: 1.8em;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: left;
+  width: 55%;
+  margin:auto;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  /*
+  margin-bottom: 2em;
+  margin-left: 9%;
+  margin-left: 9%;
+  margin-top: 100px; */
+  
+}
 
+#fotcopy{
+       text-decoration: none;
+       font-style: normal;
+       font-size: 0.8em;
+       line-height: 1.8em;        
+}  
 
 
 /* Navigering desktop */
