@@ -220,18 +220,18 @@ header {
 /*Utan Javascript*/
 .kartaNoscript {
     max-width: 100%;
-	height: 350px;
+	height: 280px;
     background-image: url("../img/kartamobil.jpg");
     background-repeat: no-repeat;
     background-position: center left;
-    background-size: contain; 
+    background-size: cover; 
 }
 
 /*Med Javascript*/
 #karta {
     box-sizing: border-box;
     max-width: 100%;
-    height: 350px;
+    height: 280px;
 }
 
 /*KONTAKTFORMULÄR*/
@@ -555,12 +555,17 @@ img.portfolio {
     
     .kartaNoscript {
     max-width: 100%;
-	height: 500px;
+	height: 350px;
     background-image: url("../img/karta.jpg");
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover; 
 }
+    
+     #karta{
+    height: 350px;
+    }
+    
  header {
     height: 175px;
     }
@@ -881,7 +886,9 @@ fieldset{
   margin-right: 5%;
 }
 
-
+ #karta{
+    height: 350px;
+    }
 }
 
 .clear{
