@@ -343,11 +343,10 @@ img.portfolio {
 #navbar {
 	width: 0;
 	position: absolute;
-	top: 0px;
+	top: 18px;
 	right: 0px;
 	background-color: #FFF;
 	margin: 100px auto;
-	opacity: 0.8;
 	transition: 0.5s;
 }	
 
@@ -365,9 +364,12 @@ img.portfolio {
 
 #navbar li a {
 	text-decoration: none;
-	color: #AEE8E6;
+  border: none;
+	color: #011D24;
 	font-size: 1.5em;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 #navbar ul li:active {
@@ -381,7 +383,7 @@ img.portfolio {
 
 #knapp {
 	position: absolute;
-	top: 65px;
+	top: 83px;
 	right: 0;
 	width: 40px;
 	height: 35px;
@@ -393,7 +395,7 @@ img.portfolio {
 	width: 30px;
 	height: 5px;
 	border-radius: 1px;
-	background-color: #AEE8E6;
+	background-color: #000;
 	transition: all 1s;
 }
 
@@ -495,11 +497,14 @@ img.portfolio {
 
 
 	#knapp {
-	top: 140px;
+	top: 171px;
 }
+  #navbar {
+    top: 106px;
+  }
 
 	#navbar.clicked {
-		top: 75px;
+		top: 106px;
 	}	
 
 #figcontainer {
@@ -556,8 +561,8 @@ h3, h4{
   margin-left: 9%;
   margin-top: 100px; */
   }
-}
-}
+
+
     
     fieldset{
         margin: 0 12.5%;
@@ -635,7 +640,7 @@ h2{
 
 }
 
-    .rubrik{
+    .rubrik, .indexrubrik{
         border-top:none;
     }
 
@@ -682,6 +687,7 @@ h3, h4{
 	position: relative;
 	width: 100%;
 	margin: 0 auto;	
+  top: 0;
 }
 
 #knapp {
@@ -705,11 +711,11 @@ h3, h4{
 }
 
 #navbar a:hover {
-	background-color: grey;
+  font-weight: 900;
 }
 
 #navbar li.active a {
-	background-color: white;
+	background-color: #AEE8E6;
 	color: black;	
 }
 
