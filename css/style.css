@@ -60,10 +60,21 @@ a:visited{
   
 }
 
+
+.intro{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  
+}
+
+
 p, ol
-  {margin: 0 9% 0 9%;
+  {
+      width: 82%;
   text-align: left;
   margin-bottom: 1.2em;
+    margin-right: auto;
+      margin-left: auto;
   }
 
 
@@ -74,6 +85,16 @@ h2 {
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 1.2em;
+    margin-top: 1.2em;
+}
+
+.rubrik{
+    background-color: #AEE8E6;
+    border-top: 18px solid #FFF;
+}
+
+.indexrubrik{
+    border-top: 18px solid #FFF;
 }
 
 h3, h4{
@@ -172,14 +193,13 @@ header {
 fieldset {
 border: none;
     padding: 0;
+    margin: 0 9%;
 }
 form{
     border: none;
     border-collapse: collapse;
     width: 100%;
-    margin: 0 auto;
-    padding: 20px 5%;
-      border-radius: 8px;
+    padding: 1.5em 0;
     -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -201,9 +221,9 @@ input, textarea, button {
     height: auto;
     margin: 0;
     outline: 0;
-    padding: 10px;
+    padding: 0.6em;
     color: #011D24;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
 }
 
 button{
@@ -211,8 +231,8 @@ button{
     background-color: #70b5b3; 
     color: #ecf7f6;
     font-weight: 400;
+    border-radius: 5px;
 }
-
 
 textarea{
     display: block;
@@ -220,6 +240,17 @@ textarea{
     overflow: auto;
     border-radius: 5px;
 }
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #70b5b3;
+}
+
+button:focus {
+background-color: #ecf7f6; 
+    color: #70b5b3;
+}
+
+
 /*==========
 FOOTER
 *****/
@@ -501,12 +532,14 @@ p, ol {
   }
 
 h2{
-  font-size: 3.65em;
+  font-size: 2.65em;
   text-align: center;
-  margin-bottom: 2em;
 
 }
-
+    
+.rubrik, .indexrubrik{
+        border-top: 31.5px solid #FFF;
+    }
 
 h3, h4{
   width: 75%;
@@ -524,6 +557,27 @@ h3, h4{
   margin-top: 100px; */
   }
 }
+}
+    
+    fieldset{
+        margin: 0 12.5%;
+    }
+    
+    #namn{
+    width: 100%;
+    }
+    
+    #email{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    }
+    
+    #telefon{
+    width: 49%;
+    float: left;
+    }
+    
 }
 
 /* Desktop */ 
@@ -575,9 +629,15 @@ p, ol {
 h2{
   font-size: 3.65em;
   text-align: center;
-  margin-bottom: 2.2em;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
 }
 
+    .rubrik{
+        border-top:none;
+    }
 
 h3, h4{
   line-height: 1.8em;
@@ -657,6 +717,27 @@ h3, h4{
 		display: none;
 	}
 
+fieldset{
+        margin: 0 22.5%;
+    }
+    
+    #namn{
+    width: 100%;
+    }
+    
+    #email{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    }
+    
+    #telefon{
+    width: 49%;
+    float: left;
+    }
+    
+
+
 
 #figcontainer {
   width: 55%;
@@ -670,6 +751,7 @@ h3, h4{
   width: 30%;
   margin-right: 5%;
 }
+
 
 }
 
