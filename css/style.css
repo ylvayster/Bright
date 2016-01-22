@@ -2,6 +2,9 @@
 
 
 /*Bakgrunder*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #FEEE98;
@@ -249,19 +252,34 @@ figure {
 
 /* OM BRIGHT */
 
+#medarbetare figure {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+#figcontainer {
+  width: 82%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 #medarbetare figure img {
-	display: block;
-	margin: 0 auto;
-	width: 70%;
-	height: auto;
-	border: 10px solid #FFF;
-  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  border: 10px solid #FFF;
+  width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-#medarbetare figure {
-	text-align: center;
+#medarbetare figcaption{
+  margin-top: 0.75em;
+}
+  
+#medarbetare span {
+  text-transform: uppercase;
 }
 
 img.portfolio { 
@@ -273,8 +291,6 @@ img.portfolio {
     box-shadow: 5px 5px 10px grey;
     margin: 4.5% 9% 4.5% 9%;
 }
-
-
 
 /* MENU */
 
@@ -440,8 +456,24 @@ img.portfolio {
 		top: 75px;
 	}	
 
+#figcontainer {
+  width: 75%;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
-body {align-content: center;}
+#medarbetare figure {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+#medarbetare figure:last-child {
+  margin-right: 0;
+}
+
+/*body {align-content: center;}*/
   
 p, ol {
   width: 75%;
@@ -475,7 +507,7 @@ h3, h4{
   margin-left: 9%;
   margin-left: 9%;
   margin-top: 100px; */
-  
+  }
 }
 
 /* Desktop */ 
@@ -514,7 +546,7 @@ h3, h4{
         float: right;
     }
 
-  body {align-content: center;}
+  /*body {align-content: center;}*/
   
 p, ol {
   width: 55%;
@@ -597,6 +629,21 @@ h3, h4{
 #utanKnapp {
 		display: none;
 	}
+
+
+#figcontainer {
+  width: 55%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#medarbetare figure {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
 }
 
 .clear{
