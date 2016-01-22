@@ -495,20 +495,29 @@ img.portfolio {
 }
 
 /* Meny utan JavaScript */
+
+#utanKnapp {
+  margin: 0;
+  padding-top: 15px;
+  background-color: #FFF;
+}
+
 #utanKnapp li {
 	list-style: none;
-	background-color: #011D24;
-	margin: 2px 0;
+	background-color: #FFF;
 	padding: 3px 0;
 	text-align: center;
 	margin-left: -40px;
+  
 }
 
 #utanKnapp li a {
 	text-decoration: none;
-	color: #AEE8E6;
+  border: none;
+	color: #000;
 	font-size: 1.5em;
 	font-family: 'Playfair Display', serif;
+  margin: 0;
 }
 
 /* GRID */
