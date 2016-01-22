@@ -36,10 +36,6 @@ background-color: #FFF;
     background-color: #AEE8E6; 
 }
 
-.pink {
-    background-color: #FFEBDE;
-}
-
 /*TYPOGRAFI / TEXTELEMENT / GENERELLA MARGINALER på TEXTELEMET*/
 
 a:link{
@@ -76,16 +72,14 @@ p, ol
   }
 
 
-h2{
+h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 1.2em;
-
 }
-
 
 h3, h4{
   font-family: 'Roboto', sans-serif;
@@ -248,7 +242,7 @@ figure {
 	margin: 0 auto;
 	width: 70%;
 	height: auto;
-	border: 12px solid #42c9c6;
+	border: 10px solid #FFF;
   max-width: 100%;
   height: auto;
   border-radius: 5px;
@@ -390,18 +384,18 @@ img.portfolio {
 
 /* Tablet */ 
 @media only screen and (min-width: 500px){
-	 	.col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+	 	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
 
     
     .kartaNoscript {
@@ -592,8 +586,6 @@ h3, h4{
 		display: none;
 	}
 }
-
-
 
 .clear{
         content: "";
