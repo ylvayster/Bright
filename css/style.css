@@ -87,6 +87,9 @@ ol{
 
 ol li{
     margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
 .firstp {
@@ -807,8 +810,13 @@ h3, h4{
 	margin: 0;	
 }
 
+#navbar ul a:active {
+  background-color: #AEE8E6;
+  color: #011D24;
+}
+
 #navbar li a {
-	padding: 4px 17px 9px 17px;
+	padding: 4px 1.5% 9px 1.5%;
 }
 
 #navbar a:hover {
@@ -818,6 +826,11 @@ h3, h4{
 #navbar li.active a {
 	background-color: #AEE8E6;
 	color: black;	
+}
+
+#navbar li.active_home a {
+  background-color: rgba(255,255,255,0);
+  color: black;
 }
 
 #utanKnapp {
