@@ -6,34 +6,67 @@
 	<title>About Bright</title>
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <noscript>
+    <style>
+       #knapp {display: none;}
+    </style>
+  </noscript>
 </head>
 <body>
+<header>
+  <div id="knapp">  
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<noscript>
+  <ul id="utanKnapp">
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="in_english.html">In English</a></li>
+  </ul>
+</noscript>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+    <li><a href="om_oss.html">Om Bright</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li class="active"><a href="in_english.html">In English</a></li>
+  </ul>
+</nav>
+
      <main>
-              <header>
-       <!--OBS nedanstående knapp placeras i headern -->
-            <div id="knapp">	
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-	    <!-- Slut på knapp -->	
-       </header>
-        <article>
-             <h2>About Bright</h2>
-                <p>
-            Bright is a web agency founded in 2015 with a mission to create better web. We’re front end experts with a passion for sustainability and the environment, and we aim to develop web sites and applications that last. We’re fully convinced that even your digital presence can be sustainable!
-                </p>
 
-                <p>
-            A part from deep knowledge of HTML, CSS and Javascript, we also have years of experience in graphic design, project management and communication. So regardless if you have a bright idea, a fully planned project or just know that you want to change your digital presence, we’re happy to help!
-                </p>
+       <div class="row white">
+            <article class="col-m-12 col-12">
 
-                <p>
-            Don’t hesitate to drop us a line, give us a call or visit us at our (almost!) climate neutral office in Stockholm and hear what we can do for you!
-                </p> 
-                <address> Send us an email to <a href="mailto:skaffa@mailadress.se">skaffa@mailadress.se</a> or call + 4670-XXXXX                  </address>
-         </article>
-       <footer>
+       
+       <div class="row">
+            <article class="col-m-12 col-12 white">
+
+                 <h2>About Bright</h2>
+                    <p>
+                Bright is a web agency founded in 2015 with a mission to create better web. We’re front end experts with a passion for sustainability and the environment, and we aim to develop web sites and applications that last. We’re fully convinced that even your digital presence can be sustainable!
+                    </p>
+
+                    <p>
+                A part from deep knowledge of HTML, CSS and Javascript, we also have years of experience in graphic design, project management and communication. So regardless if you have a bright idea, a fully planned project or just know that you want to change your digital presence, we’re happy to help!
+                    </p>
+                    <p>
+                Don’t hesitate to drop us a line, give us a call or visit us at our (almost!) climate neutral office in Stockholm and hear what we can do for you! Send us an email to <a href="mailto:hello@bright.se">hello@bright.se</a> or call + 46 (0)72-309 74 74</p>
+             </article>
+         </div>
+    </main>
+<footer>
     <div class="ikoner">
       <i class="fa fa-linkedin-square fa-3x"></i>
       <i class="fa fa-git-square fa-3x"></i>
@@ -44,25 +77,28 @@
    <div class="kontakttxt">
      <p> 
     <i class="fa fa-envelope-o"></i>
-       <a href="mailto:fakeadress@bright.se">hello@bright.se</a>
+       <a href="mailto:fakeadress@bright.se">&copy;hello@bright.se</a>
     </p>
      <p>
-       <i class="fa fa-phone"></i>+ 46 (0)70–1239877
+       <i class="fa fa-phone"></i>&copy;+ 46 (0)72–3097474
      </p>
      <p>
-    <i class="fa fa-map-pin"></i>Tomtebodavägen 3A, 171 65 Solna</p>
+    <i class="fa fa-map-pin"></i>&copy;Tomtebodavägen 3A, 171 65 Solna</p>
    </div>
 
 <address>
   <div id="fotcopy">
-©2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
+&copy;2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
       <a href="mailto:karolin.thunman@gmail.com"> Karolin Thunman</a>,
       <a href="mailto:natasza@fingerspit.se"> Natasza Nowakowska</a>.<br>
 (Projekt gjort under utbildningen till Frontendutvecklare, Nackademin.)
   </div>
 </address>  
   </footer>
+
        
     </main>
+  <script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

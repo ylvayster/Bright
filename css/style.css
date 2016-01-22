@@ -17,26 +17,28 @@ body {
 }
 
 body.index {
-    background-image: url(../../../abstractcrop.jpg);
+    background-image: url(../img/abstractcrop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
 }
 
-.colorblock {
-    background-color: #AEE8E6; 
-}
 
-.colorblock:nth-child(2n+0){
-background-color: #FFEBDE;
-}
+/*Färgerna ska alternera i ordning vitt, blått, rosa*/
 
-.colorblock:nth-child(3n+0){
+
+.white{
 background-color: #FFF;
 }
 
-.ruta1{background-color: #AEE8E6;}
+.blue {
+    background-color: #AEE8E6; 
+}
+
+.pink {
+    background-color: #FFEBDE;
+}
 
 /*TYPOGRAFI / TEXTELEMENT / GENERELLA MARGINALER på TEXTELEMET*/
 
@@ -99,7 +101,6 @@ figcaption {
   font-family: 'Roboto Condensed', sans-      serif;
   margin-bottom: 2em;
   margin-top: 0.2em;
-  
 }
 
 /*HEADER*/
@@ -113,7 +114,6 @@ header {
     background-repeat: no-repeat;
     background-size: contain;    
 }
-
 
 /*KARTA*/
 
@@ -134,24 +134,78 @@ header {
     height: 350px;
 }
 
+/*KONTAKTFORMULÄR*/
 
+
+fieldset {
+border: none;
+    padding: 0;
+}
+form{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 5%;
+      border-radius: 8px;
+    -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+}
+
+
+input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background-color: #ddf2f1;
+    border: none;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    color: #011D24;
+    margin-bottom: 30px;
+}
+
+button{
+    margin-bottom: 0px;
+    background-color: #70b5b3; 
+    color: #ecf7f6;
+    font-weight: 400;
+}
+
+
+textarea{
+    display: block;
+    resize: none;
+    overflow: auto;
+    border-radius: 5px;
+}
 /*==========
 FOOTER
 *****/
 
-
-footer p{
-  text-align: center;
+footer {
+  background-color: #FEEE98;
+  /* padding: 40px 40px 40px 40px;*/
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-footer{
-    background-color: #FFEBDE;
+footer p{
+  text-align: center;
+  margin-top: 10px;
+  
 }
 
-
-.fa{
+ikoner{
   margin: 10px 15px 10px 15px;
 } 
 
@@ -160,9 +214,7 @@ footer{
        text-decoration: none;
        font-style: normal;
        font-size: 0.65em;
-       line-height: 1.8em;
-        
-        
+       line-height: 1.8em;        
 }  
 
 
@@ -172,23 +224,41 @@ footer{
 article.portfolio {
     box-sizing: border-box;
     width: 100%;
-    padding: 5%;
-    text-align: center;
+    /*padding: 5%;  - ev. ta tillbaka*/
     overflow: hidden;
 }
 
-figure{
+figure {
     margin: 0 auto;
+}
+
+/* OM BRIGHT */
+
+#medarbetare figure img {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	border: 12px solid #42c9c6;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#medarbetare figure {
+	text-align: center;
 }
 
 img.portfolio { 
     box-sizing: border-box;
     border: 12px solid #bebebe;
-    max-width: 100%;
+    max-width: 82%;
     height: auto;
     border-radius: 5px;
     box-shadow: 5px 5px 10px grey;
+    margin: 4.5% 9% 4.5% 9%;
 }
+
 
 
 /* MENU */
@@ -275,7 +345,7 @@ img.portfolio {
 	top: 16px;
 }
 
-/* Navbar utan JavaScript */
+/* Meny utan JavaScript */
 #utanKnapp li {
 	list-style: none;
 	background-color: #011D24;
@@ -294,28 +364,35 @@ img.portfolio {
 
 /* GRID */
 
-/* Mobile */
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
 [class*="col-"] {
 	float: left;
-	width: 98%;
-    margin: 20px 1% 0 1%
+	width: 100%;
+	margin: 0;
 }
 
 
 /* Tablet */ 
 @media only screen and (min-width: 500px){
-	.col-m-1 {width: 6.33%;}
-	.col-m-2 {width: 14.66%;}
-	.col-m-3 {width: 23%;}
-	.col-m-4 {width: 31.33%;}
-	.col-m-5 {width: 39.66%;}
-	.col-m-6 {width: 48%;}
-	.col-m-7 {width: 56.33%;}
-	.col-m-8 {width: 64.66%;}
-	.col-m-9 {width: 73%;}
-	.col-m-10 {width: 81.33%;}
-	.col-m-11 {width: 89.66%;}
-	.col-m-12 {width: 98%;}
+	 	.col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
     
     .kartaNoscript {
@@ -329,44 +406,63 @@ img.portfolio {
  header {
     height: 175px;
     }
+
     
+    h3.portfolio{
+     float: right;
+    }
+    
+    p.portfolio {
+    float: right;
+    }
+
+
+	#knapp {
+	top: 140px;
+}
+
+	#navbar.clicked {
+		top: 75px;
+	}	
+
+
 }
 
 /* Desktop */ 
 
+	
 
 @media only screen and (min-width: 768px){
     
-	.col-1 {width: 6.33%;}
-	.col-2 {width: 14.66%;}
-	.col-3 {width: 23%;}
-	.col-4 {width: 31.33%;}
-	.col-5 {width: 39.66%;}
-	.col-6 {width: 48%;}
-	.col-7 {width: 56.33%;}
-	.col-8 {width: 64.66%;}
-	.col-9 {width: 73%;}
-	.col-10 {width: 81.33%;}
-	.col-11 {width: 89.66%;}
-	.col-12 {width: 98%;}
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
 
   
   header {
 		height: 250px;
 	}  
     
-  .portfolio img {
+  img.portfolio {
      float: left;
+      margin: 9%;
    }
     
-    .portfolio section {
-        float: left;
+    h3.portfolio  {
+        float: right;
     }
     
-    h3.portfolio {
-        apadding-top: 4%;
+    p.portfolio {
         float: right;
-        text-align: center;
     }
 
 
@@ -399,7 +495,7 @@ img.portfolio {
 }
 
 #navbar li a {
-	padding: 4px 20px 9px 20px;
+	padding: 4px 17px 9px 17px;
 }
 
 #navbar a:hover {
@@ -411,9 +507,14 @@ img.portfolio {
 	color: black;	
 }
 
+#utanKnapp {
+		display: none;
+	}
+}
 
 
-    .clear{
+
+.clear{
         content: "";
         clear: both;
         display: table;

@@ -5,53 +5,109 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vad vi gör</title>
   	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <noscript>
+        <style>
+         #knapp {display: none;}
+      </style>
+    </noscript>
 </head>
 <body>
-	<main>
-	   <header>
-       <!--OBS nedanstående knapp placeras i headern -->
-            <div id="knapp">	
+   <main>
+    <header>
+            <div id="knapp">    
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-	    <!-- Slut på knapp -->	
        </header>
-		<article>
+
+<noscript>
+    <ul id="utanKnapp">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="vad_vi_gor.html">Vad vi gör</a></li>
+        <li><a href="om_oss.html">Om Bright</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="in_english.html">In English</a></li>
+    </ul>
+</noscript>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="active"><a href="vad_vi_gor.html">Vad vi gör</a></li>
+        <li><a href="om_oss.html">Om Bright</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="in_english.html">In English</a></li>
+    </ul>
+</nav>
+
 		    <div class="row">
-                <div class="col-m-12 col-12">
+                <section class="col-m-12 col-12 white">
                     <h2>Vad vi gör</h2>
                     <p>Vi på Bright är experter på webb och strålande idéer! Oavsett om du vill göra om en befintlig webbsida eller applikation eller om vill skapa något helt nytt, så kan vi hjälpa till och skapa den perfekta lösningen från dig – från idé till färdig produkt.</p>
-                </div>
+                </section>
 			</div>
 
             <div class="row">
-		        <div class="col-m-12 col-12">
-                    <p>Vi har samarbetat med allt från små till stora företag, som alla på ett eller annat vis har delat vår vision om hållbart och miljömässigt företagande (titta gärna i vår portfolio (länk)). Vi på Bright hjälper er gärna att synliggöra ert hållbarhetsarbete genom er produkt, och coachar er gärna till hur ni kan tänka mer hållbart och miljövänligt kring er digitala närvaro!<p>
+		        <section class="col-m-12 col-12 blue">
+                   <h3>Vårt erbjudande</h3>
+                    <p>Vi har samarbetat med allt från små till stora företag, som alla på ett eller annat vis har delat vår vision om hållbart och miljömässigt företagande (titta gärna i <a href="portfolio.html" title="Vår portfolio">vår portfolio</a>). Vi på Bright hjälper er gärna att synliggöra ert hållbarhetsarbete genom er produkt, och coachar er gärna till hur ni kan tänka mer hållbart och miljövänligt kring er digitala närvaro!<p>
 
                     <p>Med vår samlade erfarenhet av grafisk design, projektledning och kommunikation så kan vi åta oss ett helhetsansvar för ert projekt. Vi kan självklart också ansvara för kontinuerligt underhåll av er produkt.</p>
-
-                    <p>Vi strävar efter att alla våra produkter ska vara hållbara, och arbetar därför efter tre grundprinciper:
-                </div>
+                </section>
 			</div>
-			
+
             <div class="row">
-		        <div class="col-m-12 col-12">
-                    <ol>
+                <section class="col-m-12 col-12 pink">
+                   <h3>Våra tre grundprinciper</h3>
+                    <p>Vi strävar efter att alla våra produkter ska vara hållbara, och arbetar därför efter tre grundprinciper.
+                       <ol>
                         <li>Vi skriver robust kod enligt rådande webbstandarder – för att er webbsida/applikation ska vara tillgänglig för alla, och för att underlätta för framtida utveckling</li>
                         <li>Vi skapar produkter som är enkla att underhålla</li>
                         <li>Vi tar fram en genomtänkt design för er produkt, där era behov och er målgrupp är i fokus</li>
                     </ol>
-                </div>
-            </div>
-        
-            <div class="row">
-		        <div class="col-m-12 col-12">
+                    
 			        <p>Helt enkelt – vi skapar produkter som är designade för att hålla!</p>	
-                </div>
+                </section>
             </div>
-		</article>
 	</main>
+
+ <footer>
+    <div class="ikoner">
+      <i class="fa fa-linkedin-square fa-3x"></i>
+      <i class="fa fa-git-square fa-3x"></i>
+      <i class="fa fa-twitter-square fa-3x"></i>
+      <i class="fa fa-instagram fa-3x"></i>
+   </div> 
+    
+  <div class="kontakttxt">
+    <p> 
+	    <i class="fa fa-envelope-o"></i>
+	    <a href="mailto:fakeadress@bright.se">&nbsp;hello@bright.se</a>
+    </p>
+    <p>
+       <i class="fa fa-phone"></i>&nbsp;+ 46 (0)72–3097474
+    </p>
+    <p>
+	    <i class="fa fa-map-pin"></i>&nbsp;Tomtebodavägen 3A, 171 65 Solna
+  	</p>
+  </div>
+
+	<address>
+	  <div id="fotcopy">
+			&copy;2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
+			      <a href="mailto:karolin.thunman@gmail.com"> Karolin Thunman</a>,
+			      <a href="mailto:natasza@fingerspit.se"> Natasza Nowakowska</a>.<br>
+						(Projekt gjort under utbildningen till Frontendutvecklare, Nackademin.)
+	  </div>
+	</address>  
+</footer>
+  
+<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
+
