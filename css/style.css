@@ -194,8 +194,8 @@ FOOTER
 
 footer {
   background-color: #FEEE98;
-  /* padding: 40px 40px 40px 40px;*/
-  margin-top: 0px;
+  padding: 40px 0px 40px 0px;
+  /* margin-top: 0px; */
   margin-bottom: 0px;
 }
 
@@ -205,8 +205,8 @@ footer p{
   
 }
 
-ikoner{
-  margin: 10px 15px 10px 15px;
+.ikoner{
+  margin: 10px 10px 10px 10px;
 } 
 
 
@@ -216,7 +216,6 @@ ikoner{
        font-size: 0.65em;
        line-height: 1.8em;        
 }  
-
 
 
 /*PORTFOLIO*/
