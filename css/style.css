@@ -159,9 +159,9 @@ header {
     height: 100px;
     background-image: url("../img/logotype.png");
     background: #FEEE98;
-    background: url("../img/logotype.png"), -webkit-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)50%); /* Safari 5.1 to 6.0 */
-    background: url("../img/logotype.png"), -o-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)50%); /* For Opera 11.6 to 12.0 */
-    background: url("../img/logotype.png"), -moz-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)50%); /* For Firefox 3.6 to 15 */
+    background: url("../img/logotype.png"), -webkit-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)70%); /* Safari 5.1 to 6.0 */
+    background: url("../img/logotype.png"), -o-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)70%); /* For Opera 11.6 to 12.0 */
+    background: url("../img/logotype.png"), -moz-linear-gradient(rgba(254, 238, 152,1)0%, rgba(255, 255, 255,1)70%); /* For Firefox 3.6 to 15 */
     background: url("../img/logotype.png"), linear-gradient(rgba(254, 238, 152,1)0%,rgba(255, 255, 255,1)70%); /* Standard syntax */
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -257,7 +257,11 @@ FOOTER
 
 footer {
   clear: both;
-  background-color: #FEEE98;
+  background: #FEEE98;
+    background: -webkit-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* For Opera 11.6 to 12.0 */
+    background: -moz-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* Standard syntax */
   padding: 40px 0px 40px 0px;
   /* margin-top: 0px; */
   margin-bottom: 0px;
