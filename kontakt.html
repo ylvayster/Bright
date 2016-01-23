@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kontakta oss</title>
-  <link rel="stylesheet" type="text/css" href="css/mormalize.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
@@ -56,7 +56,7 @@
         
            <div class="row">
             <section class="col-m-12 col-12 white">
-                        <p class="firstp">Har du en generell förfrågan? Kontakta oss då via formuläret nedan eller på <a href="mailto:fakeaddress@bright.se">hello@bright.se</a></p>
+                        <p class="firstp">Har du en generell förfrågan? Kontakta oss då via formuläret nedan eller på <a href="mailto:fakeaddress@bright.se" title="fakeadress@bright.se">hello@bright.se</a></p>
 
                  </section>
             </div>    
@@ -64,10 +64,10 @@
             <div class="row">  
                     <form class="col-m-12 col-12 blue">
                       <fieldset>
-                            <input type="text" name="namn" placeholder="Namn" id="namn">
-                            <input type="text" name="email" placeholder="E-mailadress" id="email">
-                            <input type="text" name="telnr" placeholder="Telefonnummer" id="telefon">
-                          <textarea name="form_meddelande" placeholder="Ditt meddelande" rows="10" id="textarea"></textarea>
+                          <label class="hidden"> Ditt namn</label> <input type="text" name="namn" placeholder="Namn" id="namn">
+                            <label class="hidden"> Din e-mailadress</label><input type="text" name="email" placeholder="E-mailadress" id="email">
+                            <label class="hidden"> Ditt telefonnummer</label><input type="text" name="telnr" placeholder="Telefonnummer" id="telefon">
+                          <label class="hidden"> Ditt meddelande</label><textarea name="form_meddelande" placeholder="Ditt meddelande" rows="10" id="textarea"></textarea>
                         <button type="submit" id="skickaknapp">SKICKA</button> 
                         </fieldset>   
                     </form> 
@@ -82,17 +82,13 @@
             
 
             <div class="row">
-                <div id="karta" class="col-m-12 col-12 white"></div>    
+                <div id="karta" class="col-m-12 col-12 white"><span class="hidden">Karta från Google över Tomtebodavägen 3A, Solna</span></div>    
                </div>
                
                 <noscript class="col-m-12 col-12 white">                          
-                        <div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna">
+                        <div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna"><span class="hidden">Karta från Google över Tomtebodavägen 3A, Solna</span>
                         </div>
                 </noscript>                    
-
-<noscript>               
-<div class="kartaNoscript" title="Karta från Google över Tomtebodavägen 3A, Solna"></div>
-</noscript>
     </main>
 <footer>
     <div class="ikoner">
@@ -108,7 +104,7 @@
        <a href="mailto:fakeadress@bright.se">&nbsp;hello@bright.se</a>
     </p>
      <p>
-       <i class="fa fa-phone"></i>&nbsp;+ 46 (0)72–3097474
+       <i class="fa fa-phone"></i>&nbsp;<a href="tel:+46-723-097474" title="Tel: +46 723 09 74 74">+ 46 (0)72-309 74 74</a>
      </p>
      <p>
     <i class="fa fa-map-pin"></i>&nbsp;Tomtebodavägen 3A, 171 65 Solna</p>
@@ -116,12 +112,12 @@
 
 <address>
   <div id="fotcopy">
-&copy;2016 <a href="mailto:ylva.haggblad@gmail.com">Ylva Häggblad</a>,
-      <a href="mailto:karolin.thunman@gmail.com"> Karolin Thunman</a>,
-      <a href="mailto:natasza@fingerspit.se"> Natasza Nowakowska</a>.<br>
+&copy;2016 <a href="mailto:ylva.haggblad@gmail.com" title="ylva.haggblad@gmail.com">Ylva Häggblad</a>,
+      <a href="mailto:karolin.thunman@gmail.com" title="karolin.thunman@gmail.com"> Karolin Thunman</a>,
+      <a href="mailto:natasza@fingerspitz.se" title="natasza@fingerspitz.se"> Natasza Nowakowska</a>.<br>
 (Projekt gjort under utbildningen till Frontendutvecklare, Nackademin.)
   </div>
-</address>  
+</address>   
   </footer>
 
 <!-- Scripts för Google map-->

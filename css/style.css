@@ -14,11 +14,11 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+    font-size: 16px;
   line-height: 1.5em;
   text-align: center;
   width: 100%;
-  padding-top: 24;
-  margin: 0;
+
 }
 
 body.index {
@@ -47,9 +47,16 @@ a:link{
   color:#011D24;
   text-decoration: none;
   border-bottom: thin dotted;
+    word-break: break-all;
 }
 
 a:hover{
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+a:focus{
   color:black;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -79,6 +86,15 @@ p, ol
       margin-left: auto;
   }
 
+p:last-of-type{
+padding-bottom: 3em;
+}
+
+p.firstp {
+padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
 ol{
     font-family: 'Playfair Display', serif;
     list-style-position: inside;
@@ -92,9 +108,7 @@ ol li{
     font-style: italic;
 }
 
-.firstp {
-padding-top: 1.2em;
-}
+
 
 h2 {
   font-family: 'Playfair Display', serif;
@@ -108,11 +122,11 @@ h2 {
 
 .rubrik{
     background-color: #AEE8E6;
-    border-top: 18px solid #FFF;
+    border-top: 1.125em solid #FFF;
 }
 
 .indexrubrik{
-    border-top: 18px solid #FFF;
+    border-top: 1.125em solid #FFF;
 }
 
 h3, h4{
@@ -154,7 +168,7 @@ figcaption {
 }
 
 
-.intro{
+p.intro{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   /* font-style: italic; */
@@ -165,7 +179,7 @@ figcaption {
     padding-bottom: 2em;
 }
 
-.intro2{
+p.intro2{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   /* font-style: italic; */
@@ -177,7 +191,7 @@ figcaption {
     margin: 0 auto;
 }
 
-.intro3{
+p.intro3{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   /* font-style: italic; */
@@ -213,6 +227,17 @@ header {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: contain;    
+}
+
+
+/*För att gömma innehåll visuellt som är läsbart av screen readers*/
+.hidden{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
 }
 
 /*KARTA*/
@@ -305,15 +330,13 @@ footer {
   clear: both;
 
   background-color: #FEEE98;
-  padding: 40px 0;
+  padding: 2.5em 0;
 
     background: -webkit-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* For Opera 11.6 to 12.0 */
     background: -moz-linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(255, 255, 255,1)0%,rgba(254, 238, 152,1)80%); /* Standard syntax */
 
-  /* margin-top: 0px; */
-  margin-bottom: 0px;
   border-top: 5px solid black;
 }
 
@@ -323,7 +346,7 @@ footer p{
 }
 
 .ikoner{
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
 } 
 
 
@@ -340,7 +363,6 @@ footer p{
 article.portfolio {
     box-sizing: border-box;
     width: 100%;
-    /*padding: 5%;  - ev. ta tillbaka*/
     overflow: hidden;
 }
 
@@ -555,7 +577,7 @@ img.portfolio {
     
     .kartaNoscript {
     max-width: 100%;
-	height: 350px;
+	height: 280px;
     background-image: url("../img/karta.jpg");
     background-repeat: no-repeat;
     background-position: center left;
@@ -563,7 +585,7 @@ img.portfolio {
 }
     
      #karta{
-    height: 350px;
+    height: 280px;
     }
     
  header {
@@ -644,13 +666,13 @@ h3, h4{
      float: right;
      padding-left:12.5%;
     padding-top: 1.67em;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125em;
     }
     
     p.portfolio {
     width: 100%;
     float: right;
-        margin: 0;
+    margin: 0;
     padding: 0 12.5%;
     padding-bottom: 1.67em;
     }
@@ -764,7 +786,7 @@ h3, h4{
   width: 55%;
   margin:auto;
   padding-top: 2.5em;
-  padding-bottom: 5px;
+  padding-bottom: 0.3125em;
   }
   /*
   margin-bottom: 2em;
@@ -772,7 +794,9 @@ h3, h4{
   margin-left: 9%;
   margin-top: 100px; */
   
-
+a:link{
+    word-break: keep-all;
+}
   
   .intro{
   font-family: 'Playfair Display', serif;
@@ -886,6 +910,11 @@ fieldset{
   margin-right: 5%;
 }
 
+    
+.kartaNoscript {
+	height: 350px;
+}
+    
  #karta{
     height: 350px;
     }
